@@ -10,11 +10,6 @@ export default function TodoList(props) {
   return (
     <ul className="list-group">
         { todoitems }
-      {/* <TodoItem todo={props.todos[0]}/>
-      <TodoItem todo={props.todos[1]}/>
-      <TodoItem todo={props.todos[2]}/>
-      <TodoItem todo={props.todos[3]}/>
-      <TodoItem todo={props.todos[4]}/> */}
     </ul>
   )
 }

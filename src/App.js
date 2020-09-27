@@ -54,7 +54,7 @@ function App () {
     const input = document.querySelector(".form-control")
     if (e.target === btn && input.value !== "") {
       const todo = {
-        id: 1 + Math.max(0, ...todos.map(todo => todo.id)),
+        // id: 1 + Math.max(0, ...todos.map(todo => todo.id)),
         done: false,
         content: newTodo,
         selected: false
@@ -62,7 +62,8 @@ function App () {
       
       setTodos([todo, ...todos])
 
-      // createTodo(todo).then(todo => setTodos([todo, ...todos]))
+      createTodo(todo).then(todo => setTodos([todo, ...todos]))
+      
       setNewTodo("")
       
     }
